@@ -1,0 +1,32 @@
+@mixin Text($fs, $fw, $color) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $color;
+    font: "San Francisco";
+}
+
+@mixin button($color, $fw, $bg-color, $pd-tb, $pd-lr, $border-color, $color-hover, $bg-color-hover) {
+    color: $color;
+    font-weight: $fw;
+    background-color: $bg-color;
+    padding: $pd-tb $pd-lr;
+    border: 1px solid $border-color;
+    &:hover {
+        color: $color-hover;
+        background-color: $bg-color-hover;
+    }
+}
+
+@mixin respond-to($breakpoint) {
+    @if map-has-key($map: $breakpoints, $key: $breakpoint) {
+        $value: map-get(
+            $map: $breakpoints,
+            $key: $breakpoint,
+        );
+        @media screen and (max-width: $value) {
+            @content;
+        }
+    } @else {
+        @warn "breakpoint không tổn tại trong breakpoints";
+    }
+}

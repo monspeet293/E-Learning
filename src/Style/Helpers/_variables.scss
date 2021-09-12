@@ -1,0 +1,49 @@
+//  COLORS
+$grey: #505763; //most common color for web
+$grey-2: #686f7a;
+$lightGrey: #f2f3f5;
+$lightGrey-2: #f7f8fa;
+$lightGrey-3: #cdd5e0;
+//$blueGrey: #686f7a;
+$blue: #007791;
+$red: #feda6a;
+$lightRed: #f36666;
+$darkRed: #202126; //hover
+$white: #fff;
+$border: #cacbcc;
+$red-1: #521822;
+$yellow: #f4c150;
+$black: rgb(255, 255, 255);
+//  FONTS
+$small: 12px;
+$medium: 14px;
+$regular: 16px;
+$h6: 20px;
+$h5: 30px;
+$h4: 36px;
+$h3: 40px;
+
+$fw-normal: 400;
+$fw-light: 300;
+$fw-bold: 700;
+
+//BORDER
+$boder-radius: 2px;
+
+//  METRICS
+$sp-1: 10px;
+$sp-2: 15px;
+$sp-3: 20px;
+$sp-4: 25px;
+$sp-5: 30px;
+$sp-6: 40px;
+$sp-7: 50px;
+$line-height: 1.43;
+
+//BREAK POINTS
+$breakpoints: (
+    "extra-large": 1200px,
+    "large": 992px,
+    "medium": 768px,
+    "small": 576px,
+);

@@ -1,0 +1,38 @@
+.course_learn_container {
+    h3 {
+        color: #feda6a;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .lesson_list {
+        .card {
+            margin-bottom: 16px;
+            background-color: #202126;
+            .card-body {
+                .lesson_list_item_title {
+                    color: #feda6a;
+                    font-weight: 500;
+                }
+                .lesson_list_item_button {
+                    button {
+                        padding-left: 16px;
+                        padding-right: 16px;
+                        line-height: 20px;
+                        min-width: 120px;
+                        border: 1px solid #707177;
+                        background-color: #feda6a;
+                        &:hover {
+                            color: #ffffff; // Màu chữ lúc hover vào
+                            background-color: #2b2e37;
+                            border: 1px solid rgba(122, 137, 148, 0.27);
+                        }
+                        &:focus {
+                            outline: none !important;
+                            box-shadow: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

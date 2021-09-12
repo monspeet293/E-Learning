@@ -1,0 +1,137 @@
+.nav-pills .nav-item .frontendCourses {
+    background-color: transparent;
+    color: $black;
+    font-size: $h6;
+    font-weight: $fw-bold;
+    transition: all 0.2s;
+    height: $sp-3;
+    line-height: $line-height;
+    &:hover {
+        font-size: $h5;
+    }
+}
+
+.nav-pills .nav-item .backendCourses {
+    background-color: transparent;
+    color: $black;
+    font-size: $h6;
+    font-weight: $fw-bold;
+    transition: all 0.2s;
+    height: $sp-3;
+    line-height: $line-height;
+    &:hover {
+        font-size: $h5;
+    }
+}
+
+.nav-pills .nav-item .mobileCourses {
+    background-color: transparent;
+    color: $black;
+    font-size: $h6;
+    font-weight: $fw-bold;
+    transition: all 0.2s;
+    height: $sp-3;
+    line-height: $line-height;
+    &:hover {
+        font-size: $h5;
+    }
+}
+
+.nav-pills .nav-item .designCourses {
+    background-color: transparent;
+    color: $black;
+    font-size: $h6;
+    font-weight: $fw-bold;
+    transition: all 0.2s;
+    height: $sp-3;
+    line-height: $line-height;
+    &:hover {
+        font-size: $h5;
+    }
+}
+
+.nav-pills .nav-item .frontendCourses.active {
+    background-color: transparent;
+    color: $red;
+    font-size: $h5;
+    font-weight: $fw-bold;
+}
+
+.nav-pills .nav-item .backendCourses.active {
+    background-color: transparent;
+    color: $red;
+    font-size: $h5;
+    font-weight: $fw-bold;
+}
+
+.nav-pills .nav-item .mobileCourses.active {
+    background-color: transparent;
+    color: $red;
+    font-size: $h5;
+    font-weight: $fw-bold;
+}
+
+.nav-pills .nav-item .designCourses.active {
+    background-color: transparent;
+    color: $red;
+    font-size: $h5;
+    font-weight: $fw-bold;
+}
+
+.course-list {
+    overflow: hidden;
+    .slick-prev {
+        top: 400px;
+        left: -40px;
+        z-index: 1;
+        width: 50px;
+        height: 100px;
+        color: #feda6a;
+        transition: color 0.2s;
+    }
+    .slick-next {
+        top: 400px;
+        right: -50px;
+        color: #feda6a;
+        width: 50px;
+        height: 100px;
+        transition: color 0.2s;
+    }
+    > ul {
+        .frontendCourses_container {
+            a.active {
+                color: #fa5238;
+                font-size: 27px;
+            }
+        }
+        .backendCourses_container {
+            a.active {
+                color: #fa5238;
+                font-size: 27px;
+            }
+        }
+        .mobileCourses_container {
+            a.active {
+                color: #fa5238;
+                font-size: 27px;
+            }
+        }
+        .designCourses_container {
+            a.active {
+                color: #fa5238;
+                font-size: 27px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .course-list {
+        display: none;
+    }
+}
+@media screen and (max-width: 992px) {
+    .course-list {
+        width: 100%;
+        max-width: none;
+    }
+}

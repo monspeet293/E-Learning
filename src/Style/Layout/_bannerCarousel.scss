@@ -1,0 +1,67 @@
+@import "../Helpers/mixin";
+.myCover {
+    background-image: url(../../Assets/img/cover.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    .myCover_content {
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        width: 30%;
+        h1 {
+            @include Text($h4, $fw-bold, $white);
+        }
+        p {
+            @include Text($regular + 2, $fw-normal, $white);
+        }
+    }
+    .myCover_search {
+        input {
+            height: 50px;
+        }
+        .input-group-append {
+            .input-group-text {
+                font-size: $h6;
+                color: $red;
+                border: none;
+                background-color: $white;
+                &:hover {
+                    background-color: $red;
+                    color: $white;
+                    border-left: none;
+                }
+            }
+        }
+    }
+}
+.intro {
+    background-image: linear-gradient(to right, #26282f, #1e232e);
+    .intro_content {
+        background-color: linear-gradient($red-1, $red);
+        width: 80%;
+        margin: 0 auto;
+        padding: $sp-4 0;
+        .intro_item {
+            display: flex;
+            align-items: center;
+            .intro_icon {
+                font-size: $h3 + 5;
+                color: #feda6a;
+                margin: 0 $sp-2;
+            }
+            .icon_content {
+                p:first-child {
+                    @include Text($regular, $fw-bold, #feda6a);
+                    margin: 0;
+                }
+                p:nth-child(2) {
+                    @include Text($regular, $fw-normal, #feda6a);
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

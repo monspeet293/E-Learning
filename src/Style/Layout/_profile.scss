@@ -1,0 +1,64 @@
+.profile_container {
+    width: 100%;
+    background: #f6f9fa;
+    .card_wrap {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        .card {
+            .card-body {
+                .profile_avatar {
+                    display: flex;
+                    justify-content: center;
+                    .profile_avatar_label {
+                        cursor: pointer;
+                        border-radius: 50%;
+                        background-size: cover;
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        .profile_avatar_input {
+                            display: none;
+                        }
+                    }
+                }
+                .form-group:read-only {
+                    border: 1px solid rgba(0, 0, 0, 0.07);
+                    label {
+                        font-size: 15px;
+                        margin-bottom: 0;
+                        font-weight: 500;
+                        letter-spacing: 0.06em;
+                        color: #7a8994;
+                        padding-left: 10px;
+                    }
+                    .form-control {
+                        border: none;
+                        background-color: #fff;
+                        padding-left: 10px;
+                        background: none;
+                        box-shadow: none;
+                        color: #c3c2c7;
+                    }
+                }
+                .form-group {
+                    border: 1px solid rgba(0, 0, 0, 0.07);
+                    label {
+                        font-size: 15px;
+                        margin-bottom: 0;
+                        font-weight: 500;
+                        letter-spacing: 0.06em;
+                        color: #7a8994;
+                        padding-left: 10px;
+                    }
+                    .form-control.matKhau {
+                        border: none;
+                        background-color: #fff;
+                        padding-left: 10px;
+                        background: none;
+                        box-shadow: none;
+                        color: #373e43;
+                    }
+                }
+            }
+        }
+    }
+}

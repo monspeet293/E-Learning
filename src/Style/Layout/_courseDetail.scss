@@ -1,0 +1,83 @@
+.coursedetail {
+    .coursedetail_title {
+        background-color: $grey-2;
+        padding: $sp-5 $sp-5 * 3;
+        //margin: $sp-4 0;
+        h1 {
+            @include Text($h3, $fw-bold, $white);
+        }
+    }
+    .coursedetail_content {
+        //  background-color:yellow;
+        padding: $sp-5 $sp-4 * 4;
+        //padding-right: 0px;
+        .coursedetail_content-top {
+            display: flex;
+            justify-content: space-between;
+            p {
+                font-style: italic;
+                @include Text($regular, $fw-light, $grey-2);
+                margin: 0;
+                align-self: flex-end;
+            }
+        }
+
+        .coursedetail_detail {
+            padding: $sp-4 0;
+            @include Text($regular + 2, $fw-normal, $black);
+        }
+
+        .coursedetail_content {
+            width: 80%;
+            .coursedetail_content_item_container {
+                background-color: #202126;
+                border: solid 1px $lightGrey-3;
+                border-bottom: solid 3px $lightGrey-3;
+                border-radius: 5px;
+                .coursedetail_content_item {
+                    @include Text($regular + 2, $fw-normal, $black);
+                    padding: 10px;
+                    align-items: center;
+                    border-bottom: solid 1px $lightGrey-3;
+                    p {
+                        margin-bottom: 0;
+                        cursor: default;
+                    }
+                }
+            }
+        }
+    }
+    .coursedetail_card {
+        .coursedetail_card_title {
+            @include Text($h5, $fw-normal, $grey);
+            //margin: $sp-1 0;
+        }
+        .rating_stars {
+            margin: $sp-2 0;
+            i {
+                //font-size: $h6;
+                @include Text($h6, $fw-normal, $yellow);
+            }
+        }
+        .coursedetail_card_price {
+            @include Text($h6, $fw-bold, $black);
+        }
+        .coursedetail_card_content {
+            @include Text($medium, $fw-normal, $black);
+        }
+        .coursedetail_card_btn {
+            font-size: $h6;
+            //margin: $sp-1 auto;
+            width: 100%;
+            outline: none;
+            display: block;
+        }
+    }
+    .related_course {
+        .related_course_title {
+            color: #feda6a;
+            font-size: $h4;
+            margin: $sp-4 0 $sp-4 0;
+        }
+    }
+}

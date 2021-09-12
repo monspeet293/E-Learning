@@ -1,0 +1,25 @@
+.lesson_container {
+    margin-bottom: 24px;
+    .lesson_courseName {
+        color: #feda6a;
+        font-weight: 400;
+    }
+    .lesson_title {
+        color: #feda6a;
+    }
+    iframe {
+        width: 100%;
+        height: 500px;
+    }
+    .lesson_btn {
+        display: flex;
+        justify-content: center;
+        .lesson_btnCourseLearn {
+            width: 30%;
+            font-size: $h6;
+            outline: none;
+            display: block;
+            margin-top: 24px;
+        }
+    }
+}

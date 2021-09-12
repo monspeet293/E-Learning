@@ -1,0 +1,61 @@
+.student_reaction {
+    margin: $sp-4 auto;
+    background-color: #1d1e22;
+    height: 400px;
+    padding: $sp-3 0;
+    h3 {
+        margin: $sp-4 0;
+        color: #feda6a;
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .student_reaction_item {
+        background-color: #1d1e22;
+        border: 10px solid #1d1e22;
+        padding: $sp-4;
+        height: 250px;
+        .student_reaction_person {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            margin-bottom: $sp-3;
+            .ava1 {
+                background: url(../../Assets/img/avtDungVo.jpg);
+            }
+            .ava2 {
+                background: url(../../Assets/img/ava1.jpg);
+            }
+            .ava3 {
+                background: url(../../Assets/img/ava3.jpg);
+            }
+            .ava4 {
+                background: url(../../Assets/img/ava4.jpg);
+            }
+            .student_reaction_avatar {
+                width: 60px;
+                height: 60px;
+                background-color: $grey-2;
+                border-radius: 50%;
+                color: white;
+                text-align: center;
+                align-items: center;
+                position: relative;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                span {
+                    margin: 0;
+                    @include Text($h6, $fw-bold, white);
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+            p {
+                margin: 0 $sp-4;
+                @include Text($regular, $fw-bold, $grey);
+            }
+        }
+    }
+}

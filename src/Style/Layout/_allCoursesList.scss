@@ -1,0 +1,21 @@
+.mt-4.all-courses-list {
+    padding-top: $sp-7;
+    overflow: hidden;
+    .slick-arrow.slick-prev {
+        top: 370px;
+        left: -10px;
+        z-index: 1;
+        width: 50px;
+        height: 100px;
+        color: #feda6a;
+        transition: color 0.2s;
+    }
+    .slick-arrow.slick-next {
+        top: 370px;
+        right: -25px;
+        color: #feda6a;
+        width: 50px;
+        height: 100px;
+        transition: color 0.2s;
+    }
+}

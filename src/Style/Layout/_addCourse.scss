@@ -1,0 +1,35 @@
+.addCourse_wrapper {
+    margin-top: 50px;
+    .MuiStepper-root {
+        background-color: #fafafa;
+    }
+    .addLesson_wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .addLesson_content_wrapper {
+            display: flex;
+            width: 100%;
+            .addLesson_btnCancel {
+                .btnRemoveLessonInput {
+                    margin-top: 31px;
+                }
+            }
+        }
+    }
+    .addLesson_wrapper form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        .addLesson_title {
+            margin-right: 5px;
+            width: 100%;
+        }
+        .addLesson_linkVideo {
+            margin-left: 5px;
+            width: 100%;
+        }
+    }
+}

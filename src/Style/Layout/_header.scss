@@ -1,0 +1,146 @@
+.myNavBar {
+    border-bottom: solid 1px #1d1e22;
+    position: relative;
+    .navbar-brand {
+        flex-grow: 1;
+        img {
+            width: 120px;
+            height: 60px;
+            object-fit: cover;
+        }
+    }
+    .myNavBar_categories {
+        flex-grow: 1;
+        @include Text($regular, $fw-normal, #feda6a);
+        align-self: center;
+    }
+    .myNavBar_search {
+        flex-grow: 5;
+        .input-group {
+            input {
+                border: none;
+                background-color: #2b2e37;
+                transition: none;
+                height: 45px;
+                margin-top: 13px;
+                &::placeholder {
+                    @include Text($regular, $fw-light, #707177);
+                }
+                &:focus {
+                    box-shadow: none;
+                    background-color: #2b2e37;
+                    border-top: 1px solid $border;
+                    border-bottom: 1px solid $border;
+                    border-left: 1px solid $border;
+                }
+                &:focus + .input-group-append {
+                    .input-group-text {
+                        background-color: #2b2e37;
+                        color: #707177;
+                        border-top: 1px solid $border;
+                        border-bottom: 1px solid $border;
+                        border-right: 1px solid $border;
+                    }
+                }
+            }
+            .input-group-append {
+                .input-group-text {
+                    font-size: $h6;
+                    color: #707177;
+                    border: none;
+                    background-color: #2b2e37;
+                    margin-top: 13px;
+                    &:hover {
+                        background-color: #707177;
+                        color: #2b2e37;
+                        border-left: none;
+                    }
+                }
+            }
+            .course-search-list {
+                list-style-type: none;
+                position: absolute;
+                background-color: #1d1e22;
+                width: 100%;
+                z-index: 1000;
+                top: 100%;
+                border-radius: 2px;
+                .course-search-item {
+                    margin-top: 3px;
+                    margin-bottom: 3px;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: #36363a;
+                    }
+                }
+            }
+        }
+    }
+    .navbar-nav {
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        .nav-item {
+            .nav-link {
+                @include Text($regular, $fw-normal, $grey);
+                padding: $sp-1 $sp-1;
+                align-self: center;
+            }
+            &:hover {
+                background-color: #202126;
+            }
+        }
+        .nav-item:nth-child(3) {
+            border-radius: 50%;
+            padding: $sp-1 $sp-1;
+            font-size: $h6;
+            align-self: center;
+        }
+    }
+
+    @include respond-to("extra-large") {
+        .navbar-nav {
+            .business,
+            .instructor {
+                display: none;
+            }
+        }
+    }
+    @include respond-to("medium") {
+        .myNavBar_categories,
+        .myNavBar_search {
+            display: none;
+        }
+    }
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    white-space: nowrap;
+    .btn-user {
+        text-transform: none;
+        color: #9b9b9b;
+        outline: none;
+        &:hover {
+            background-color: #707177;
+        }
+        img {
+            width: 47px;
+            height: 47px;
+            border-radius: 50%;
+            margin-right: 7px;
+        }
+        p {
+            margin-bottom: 0;
+            font-size: 17px;
+        }
+    }
+}
+.dropdown-user {
+    z-index: 1401 !important;
+    .MuiPaper-rounded {
+        top: 70px !important;
+    }
+}
